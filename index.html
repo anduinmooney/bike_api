@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Find a Bike</title>
+  </head>
+  <body>
+    <h1>Enter your search terms:</h1>
+    <form id="bike-form">
+      <label for="per-page">Enter max result #</label>
+      <input id="per-page" value="10" type="number">
+      <br>
+      <label for="location">Enter location (zip code or "IP" only)</label>
+      <input id="location" value="97203" type="number">
+      <br>
+      <label for="distance">Search radius (in mi)</label>
+      <input id="distance" value="10" type="number">
+      <br>
+      <button type="submit">Search</button>
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
