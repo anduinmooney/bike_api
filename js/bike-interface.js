@@ -14,10 +14,10 @@ $(document).ready(function() {
 
     newSearch.then(function(response) {
       let body = JSON.parse(response);
-      $('#result').text(body.bikes[0].title);
-      // for (let i = 0; body.bikes.length; i++) {
-      //   $('#result').text(body.bikes[i]);
-      // }
+      // $('#result').text(body.bikes[i].title);
+      for (let i = 0; i < body.bikes.length; i++) {
+        $('#result').append("<li>" + body.bikes[i].title + "</li>");
+      }
     }, function(error) {
       $('.showErrors').text(`There was an error: ${error.message}`);
     });
