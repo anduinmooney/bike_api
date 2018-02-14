@@ -16,7 +16,7 @@ $(document).ready(function() {
       let body = JSON.parse(response);
       // $('#result').text(body.bikes[i].title);
       for (let i = 0; i < body.bikes.length; i++) {
-        $('#result').append("<h3>" + body.bikes[i].title + "</h3>" + "<li>" + body.bikes[i].frame_colors + "</li>");
+        $('#result').append("<div class = 'box'>" + "<h3>" + body.bikes[i].title + "</h3>" + "<li>" + body.bikes[i].frame_colors + "</li>" + "<p>" + body.bikes[i].stolen_location + "</p>" + "</div>");
         if (body.bikes[i].thumb === null) {
           $('#result').append("<p><em> No image found </em></p>");
         } else {
