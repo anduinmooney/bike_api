@@ -4,6 +4,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plotly-latest.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link href="build/css/vendor.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -11,6 +12,8 @@
   </head>
   <body>
     <h1>Enter your search terms:</h1>
+    <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <a href ="stats.html" target=_"blank">Bike Statistics</a>
     <form id="bike-form">
       <label for="per-page">Enter max result #</label>
       <input id="per-page" value="10" type="number">

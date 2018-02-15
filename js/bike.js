@@ -13,4 +13,15 @@ export let promise = function(perPage, location, distance) {
     request.open("GET", url, true);
     request.send();
   });
+
+let manufactureName = [];
+  for (i = 0; i < body.bikes.length; i++) {
+    if ($.inArray(body.bikes.manufacturer_name[i], manufactureName) != -1) {
+      manufactureName[$.inArray(body.bikes.manufacturer_name[i], manufactureName)] += 1;
+    } else {
+      let body.bikes.manufacturer_name[i] = 1;
+      manufactureName.push(body.bikes.manufacturer_name[i]);
+      console.log(manufactureName);
+    }
+  }
 };

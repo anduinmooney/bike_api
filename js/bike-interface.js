@@ -27,4 +27,17 @@ $(document).ready(function() {
       $('.showErrors').text(`There was an error: ${error.message}`);
     });
   });
+
+  let data = [{
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie'
+}];
+
+let layout = {
+  height: 400,
+  width: 500
+};
+
+Plotly.newPlot('myDiv', data, layout);
 });
